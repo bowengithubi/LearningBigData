@@ -1,0 +1,44 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<Configuration status="error" strict="true" name="XMLConfig">-->
+<!--    <Appenders>-->
+<!--        &lt;!&ndash; 类型名为Console，名称为必须属性 &ndash;&gt;-->
+<!--        <Appender type="Console" name="STDOUT">-->
+<!--            &lt;!&ndash; 布局为PatternLayout的方式，-->
+<!--            输出样式为[INFO] [2018-01-22 17:34:01][org.test.Console]I'm here &ndash;&gt;-->
+<!--            <Layout type="PatternLayout"-->
+<!--                    pattern="[%p] [%d{yyyy-MM-dd HH:mm:ss}][%c{10}]%m%n" />-->
+<!--        </Appender>-->
+
+<!--    </Appenders>-->
+
+<!--    <Loggers>-->
+<!--        &lt;!&ndash; 可加性为false &ndash;&gt;-->
+<!--        <Logger name="test" level="info" additivity="false">-->
+<!--            <AppenderRef ref="STDOUT" />-->
+<!--        </Logger>-->
+
+<!--        &lt;!&ndash; root loggerConfig设置 &ndash;&gt;-->
+<!--        <Root level="info">-->
+<!--            <AppenderRef ref="STDOUT" />-->
+<!--        </Root>-->
+<!--    </Loggers>-->
+
+<!--</Configuration>-->
+
+
+
