@@ -29,6 +29,7 @@
             JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME
         </value>
     </property>
+
     <property>
         <name>yarn.scheduler.minimum-allocation-mb</name>
         <value>512</value>
@@ -100,13 +101,25 @@
 
     <property>
         <name>yarn.resourcemanager.hostname.rm1</name>
-        <value>hadoop102</value>
+        <value>hadoop103</value>
     </property>
 
     <property>
         <name>yarn.resourcemanager.hostname.rm2</name>
-        <value>hadoop103</value>
+        <value>hadoop104</value>
     </property>
+
+    <property>
+        <name>yarn.resourcemanager.webapp.address.rm1</name>
+        <value>hadoop103:8088</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.webapp.address.rm2</name>
+        <value>hadoop104:8088</value>
+    </property>
+
+
 
     <!--指定zookeeper集群的地址-->
     <property>
