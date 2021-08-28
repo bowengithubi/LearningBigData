@@ -18,5 +18,8 @@ ssh hadoop102 "/opt/module/serviceManage/hive.sh start"
 echo "==========     启动Kafka集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/startKafkaCluster.sh"
 
+echo "==========     启动Hbase集群     =========="
+ssh hadoop103 "/opt/module/hbase-2.0.5/bin/start-hbase.sh"
+
 echo "==========     项目启动结果     =========="
 ssh hadoop102 "/opt/module/serviceManage/jpsall"
