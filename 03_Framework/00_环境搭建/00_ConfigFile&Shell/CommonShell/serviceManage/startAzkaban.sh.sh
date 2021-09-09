@@ -7,7 +7,7 @@
 # 2、网络名称已经修改，并且配置好host解析
 
 echo "==========     启动Azkaban Executor   =========="
-ssh hadoop102 "/opt/module/azkaban/executor/bin/azkaban-executor-start.sh"
+ssh hadoop102 "nohup /opt/module/azkaban/executor/bin/azkaban-executor-start.sh >/opt/module/azkaban/executor/bin/azkaban-executor-start.log "
 
 echo "==========     启动Azkaban Web服务器  =========="
-ssh hadoop102 "/opt/module/azkaban/server/bin/azkaban-web-start.sh"
+ssh hadoop102 "nohup /opt/module/azkaban/server/bin/azkaban-web-start.sh >/opt/module/azkaban/server/bin/azkaban-web-start.log"
