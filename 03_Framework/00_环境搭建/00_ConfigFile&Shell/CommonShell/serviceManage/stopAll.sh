@@ -19,10 +19,10 @@ echo "==========     停止Hive     =========="
 ssh hadoop102 "/opt/module/serviceManage/hive.sh stop"
 
 echo "==========     停止Hadoop HA     =========="
-ssh hadoop102 "/opt/module/serviceManage/stopHadoopHA.sh"
+ssh hadoop102 "/opt/module/serviceManage/stopHBase.sh"
 
-echo "==========     停止Zookeeper集群     =========="
-ssh hadoop102 "/opt/module/serviceManage/stopZookeeper.sh"
+echo "==========     停止Azkaban集群     =========="
+ssh hadoop102 "/opt/module/serviceManage/stopAzkaban.sh"
 
 echo "==========     项目停止结果     =========="
 ssh hadoop102 "/opt/module/serviceManage/jpsall"

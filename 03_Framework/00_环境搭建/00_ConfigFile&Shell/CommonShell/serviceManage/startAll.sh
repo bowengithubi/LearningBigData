@@ -19,10 +19,10 @@ echo "==========     启动Kafka集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/startKafkaCluster.sh"
 
 echo "==========     启动Hbase集群     =========="
-ssh hadoop103 "/opt/module/hbase-2.0.5/bin/start-hbase.sh"
+ssh hadoop102 "/opt/module/serviceManage/startHBase.sh"
 
-echo "==========     启动Phoenix QueryServer  =========="
-ssh hadoop102 "/opt/module/phoenix/bin/queryserver.py start"
+echo "==========     启动Azkaban集群     =========="
+ssh hadoop102 "/opt/module/serviceManage/startAzkaban.sh"
 
 echo "==========     项目启动结果     =========="
 ssh hadoop102 "/opt/module/serviceManage/jpsall"
