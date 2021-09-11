@@ -1,0 +1,4 @@
+# first.job
+# 测试，执行一个shell命令，创建一个文件夹
+type=command
+command=mkdir /home/atguigu/temp/AzkabanTest

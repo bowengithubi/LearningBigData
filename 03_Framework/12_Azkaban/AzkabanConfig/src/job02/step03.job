@@ -1,0 +1,5 @@
+# 第二步
+# 测试，执行一个shell命令，创建一个文件夹
+type=command
+dependencies=step02
+command=echo "Write by job03" >> /home/atguigu/temp/AzkabanTest/Job02/file.log
