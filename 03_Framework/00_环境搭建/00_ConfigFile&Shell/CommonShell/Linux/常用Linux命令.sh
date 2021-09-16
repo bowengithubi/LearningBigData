@@ -17,8 +17,8 @@ find /opt/module -name 'my*'
 
 find /opt/module -name 'guava-*'
 
-/opt/module/hadoop-3.1.3/share/hadoop/common/lib/guava-27.0-jre.jar
-/opt/module/hadoop-3.1.3/share/hadoop/hdfs/lib/guava-27.0-jre.jar
+/opt/module/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar
+/opt/module/hadoop/share/hadoop/hdfs/lib/guava-27.0-jre.jar
 /opt/module/hive/lib/guava-27.0-jre.jar
 /opt/module/tez/lib/guava-27.0-jre.jar
 

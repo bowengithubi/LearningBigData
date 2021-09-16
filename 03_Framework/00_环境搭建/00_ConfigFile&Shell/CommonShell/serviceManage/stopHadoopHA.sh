@@ -7,7 +7,7 @@
 # 2、网络名称已经修改，并且配置好host解析
 
 echo "==========     停止HadoopHA集群     =========="
-ssh hadoop102 "/opt/module/hadoop-3.1.3/sbin/stop-all.sh"
+ssh hadoop102 "/opt/module/hadoop/sbin/stop-all.sh"
 
 echo "==========     停止timeLineServer     =========="
 ssh hadoop103 "yarn --daemon stop timelineserver"

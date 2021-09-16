@@ -17,8 +17,7 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
-    <!--	HDFS HA集群配置  start  -->
+    <!-- -->
     <!-- NameNode配置 -->
     <!--
     <property>
@@ -26,15 +25,15 @@
         <value>hdfs://hadoop102:8020</value>
     </property>
     -->
+
     <property>
         <name>fs.defaultFS</name>
         <value>hdfs://mycluster</value>
     </property>
 
-    <!-- hadoop数据存储路径 -->
     <property>
         <name>hadoop.data.dir</name>
-        <value>/opt/ha/hadoop-3.1.3/data</value>
+        <value>/opt/module/hadoop/data</value>
     </property>
 
     <!--    Zookeeper集群连接地址-->
@@ -53,6 +52,7 @@
         <name>hadoop.proxyuser.atguigu.groups</name>
         <value>*</value>
     </property>
+
     <!-- 网页端访问HDFS，默认用户 -->
     <property>
         <name>hadoop.http.staticuser.user</name>

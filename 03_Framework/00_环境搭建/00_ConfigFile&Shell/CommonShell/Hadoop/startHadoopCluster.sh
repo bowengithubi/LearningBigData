@@ -7,10 +7,10 @@
 # 2、网络名称已经修改，并且配置好host解析
 
 echo "==========     启动hdfs     =========="
-ssh hadoop102 "/opt/module/hadoop-3.1.3/sbin/start-dfs.sh"
+ssh hadoop102 "/opt/module/hadoop/sbin/start-dfs.sh"
 
 echo "==========     启动yarn     =========="
-ssh hadoop103 "/opt/module/hadoop-3.1.3/sbin/start-yarn.sh"
+ssh hadoop103 "/opt/module/hadoop/sbin/start-yarn.sh"
 
 echo "==========     启动timeLineServer     =========="
 ssh hadoop103 "yarn --daemon start timelineserver"

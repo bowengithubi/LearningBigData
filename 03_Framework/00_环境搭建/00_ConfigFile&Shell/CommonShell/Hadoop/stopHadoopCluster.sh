@@ -13,10 +13,10 @@ echo "==========     停止historyServer     =========="
 ssh hadoop102 "mapred --daemon stop historyserver"
 
 echo "==========     停止yarn     =========="
-ssh hadoop103 "/opt/module/hadoop-3.1.3/sbin/stop-yarn.sh"
+ssh hadoop103 "/opt/module/hadoop/sbin/stop-yarn.sh"
 
 echo "==========     停止hdfs     =========="
-ssh hadoop102 "/opt/module/hadoop-3.1.3/sbin/stop-dfs.sh"
+ssh hadoop102 "/opt/module/hadoop/sbin/stop-dfs.sh"
 
 echo "==========     启动结果     =========="
 ssh hadoop102 "jpsall"

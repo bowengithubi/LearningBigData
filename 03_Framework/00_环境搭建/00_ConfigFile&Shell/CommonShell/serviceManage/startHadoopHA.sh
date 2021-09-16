@@ -7,7 +7,7 @@
 # 2、网络名称已经修改，并且配置好host解析
 
 echo "==========     启动HadoopHA集群     =========="
-ssh hadoop102 "/opt/module/hadoop-3.1.3/sbin/start-all.sh"
+ssh hadoop102 "/opt/module/hadoop/sbin/start-all.sh"
 
 echo "==========     启动timeLineServer     =========="
 ssh hadoop103 "yarn --daemon start timelineserver"
