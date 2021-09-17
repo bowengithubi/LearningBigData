@@ -5,27 +5,31 @@
     <!--  Hive连接数据库配置  -->
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:mysql://hadoop102:3306/metastore?useSSL=false</value>
+        <value>jdbc:mysql://hadoop102:3306/metastore?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8</value>
     </property>
 
+    <!--数据库连接驱动-->
     <property>
         <name>javax.jdo.option.ConnectionDriverName</name>
         <value>com.mysql.jdbc.Driver</value>
     </property>
 
+    <!--数据库连接用户-->
     <property>
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>root</value>
     </property>
 
+    <!--数据库连接密码-->
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
         <value>000000</value>
     </property>
 
+    <!--Hive在HDFS上的数据存储路径-->
     <property>
         <name>hive.metastore.warehouse.dir</name>
-        <value>/user/hive/warehouse</value>
+        <value>/hive/warehouse</value>
     </property>
 
     <property>
@@ -33,6 +37,7 @@
         <value>false</value>
     </property>
 
+    <!--Hive 连接到这些 URI 之一，以向远程 Metastore(URI 的逗号分隔列表)发出元数据请求-->
     <property>
         <name>hive.metastore.uris</name>
         <value>thrift://hadoop102:9083</value>
@@ -67,3 +72,4 @@
 
 
 </configuration>
+
