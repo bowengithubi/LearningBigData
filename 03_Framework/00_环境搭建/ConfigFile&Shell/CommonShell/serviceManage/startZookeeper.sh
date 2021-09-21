@@ -6,7 +6,7 @@
 # 1、集群之间需要配置ssh免密登录
 # 2、网络名称已经修改，并且配置好host解析
 
-echo "==========     启动Zookper集群     =========="
+echo "==========     启动Zookeeper集群     =========="
 
 node=("hadoop102" "hadoop103" "hadoop104")
 
