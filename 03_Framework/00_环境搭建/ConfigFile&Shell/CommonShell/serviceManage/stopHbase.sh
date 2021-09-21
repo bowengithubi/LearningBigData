@@ -10,4 +10,4 @@ echo "==========     停止Phoenix QueryServer  =========="
 ssh hadoop102 "/opt/module/phoenix/bin/queryserver.py stop"
 
 echo "==========     停止Hbase集群     =========="
-ssh hadoop103 "/opt/module/hbase-2.0.5/bin/stop-hbase.sh"
+ssh hadoop103 "/opt/module/hbase/bin/stop-hbase.sh"

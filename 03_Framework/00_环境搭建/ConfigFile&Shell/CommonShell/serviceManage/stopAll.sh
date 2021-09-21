@@ -10,7 +10,7 @@ echo "==========     停止Phoenix QueryServer  =========="
 ssh hadoop102 "/opt/module/phoenix/bin/queryserver.py stop"
 
 echo "==========     停止Hbase集群     =========="
-ssh hadoop103 "/opt/module/hbase-2.0.5/bin/stop-hbase.sh"
+ssh hadoop102 "/opt/module/serviceManage/stopHbase.sh"
 
 echo "==========     停止Kafka集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/stopKafkaCluster.sh"
@@ -19,10 +19,13 @@ echo "==========     停止Hive     =========="
 ssh hadoop102 "/opt/module/serviceManage/hive.sh stop"
 
 echo "==========     停止Hadoop HA     =========="
-ssh hadoop102 "/opt/module/serviceManage/stopHBase.sh"
+ssh hadoop102 "/opt/module/serviceManage/stopHadoopHA.sh"
 
 echo "==========     停止Azkaban集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/stopAzkaban.sh"
+
+echo "==========     停止Zookeeper集群     =========="
+ssh hadoop102 "/opt/module/serviceManage/stopZookeeper.sh"
 
 echo "==========     项目停止结果     =========="
 ssh hadoop102 "/opt/module/serviceManage/jpsall"

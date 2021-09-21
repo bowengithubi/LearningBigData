@@ -19,7 +19,7 @@ echo "==========     启动Kafka集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/startKafkaCluster.sh"
 
 echo "==========     启动Hbase集群     =========="
-ssh hadoop102 "/opt/module/serviceManage/startHBase.sh"
+ssh hadoop102 "/opt/module/serviceManage/startHbase.sh"
 
 echo "==========     启动Azkaban集群     =========="
 ssh hadoop102 "/opt/module/serviceManage/startAzkaban.sh"
