@@ -1,4 +1,4 @@
-package cn.xiaodong.chapter01
+package cn.xiaodong.scala.chapter01
 
 /**
  * Scala入门案例

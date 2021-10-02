@@ -1,4 +1,4 @@
-package cn.xiaodong.chapter01
+package cn.xiaodong.scala.chapter01
 
 /**
  * 定义一个Scala类
@@ -14,6 +14,7 @@ Object:定义一个单例对象(伴生对象)
   （2）单例对象，对应的类，叫伴生类，伴生对象和伴生类的名字，应当一致
   （3）单例对象中的属性和方法，可用通过伴生类名，直接调用访问
  */
+
 object HelloScala {
 
 
@@ -30,6 +31,7 @@ object HelloScala {
        Unit是一个特殊的数据类型，是一个类，相当于Java中的关键字void，表示函数没有返回类型
        返回值类型，与函数体之间，使用等号进行连接
   */
+
   def main(args: Array[String]): Unit = {
     /*
     println:Scala中的方法，用于输出，相当于Java中的System.out.println()
