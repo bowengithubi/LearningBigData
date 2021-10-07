@@ -3,7 +3,7 @@ package cn.xiaodong.scala.chapter02
 /**
  * Scala，String与基本数据类型的转换
  */
-object S10_DataTypeChange03 {
+object S11_DataTypeChange03 {
 
   def main(args: Array[String]): Unit = {
     // ---------------------Part 03、String与基本数据类型的转换 -------------------------------------
