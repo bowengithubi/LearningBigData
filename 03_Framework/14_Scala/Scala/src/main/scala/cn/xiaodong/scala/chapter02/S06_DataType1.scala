@@ -3,7 +3,7 @@ package cn.xiaodong.scala.chapter02
 /**
  * 数据类型：整型、浮点类型
  */
-object S06_DataType {
+object S06_DataType1 {
 
   def main(args: Array[String]): Unit = {
 

@@ -1,5 +1,7 @@
 package cn.xiaodong.scala.chapter02
 
+import scala.reflect.internal.util.StringOps
+
 /**
  * 数据类型：字符型、布尔型
  */
@@ -25,6 +27,9 @@ object S07_DataType2 {
 
     //（5）\" ：表示"
     println("同学们都说：\"大海哥最帅\"")
+
+    var str1: String = "123456"
+    println("str1=" + str1)
 
     // ---------------------Part 04、 布尔类型 -------------------------------------
     var boolean1: Boolean = true
