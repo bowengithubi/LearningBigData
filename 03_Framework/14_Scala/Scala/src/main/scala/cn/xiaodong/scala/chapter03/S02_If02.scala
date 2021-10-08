@@ -5,7 +5,7 @@ import scala.io.StdIn
 /**
  * if逻辑控制
  */
-object S01_If02 {
+object S02_If02 {
 
   def main(args: Array[String]): Unit = {
 
