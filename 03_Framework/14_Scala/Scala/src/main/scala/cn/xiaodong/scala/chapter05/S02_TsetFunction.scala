@@ -1,7 +1,7 @@
 package cn.xiaodong.scala.chapter05
 
 /**
- * 函数的定义
+ * 函数的定义（函数入参、以及函数返回值）
  */
 object S02_TsetFunction {
 

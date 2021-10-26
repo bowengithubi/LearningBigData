@@ -1,7 +1,7 @@
 package cn.xiaodong.scala.chapter05
 
 /**
- * 函数参数
+ * 函数参数的特性
  */
 object S03_TsetFunction {
 

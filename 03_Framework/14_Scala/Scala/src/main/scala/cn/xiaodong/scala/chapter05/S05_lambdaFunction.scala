@@ -1,7 +1,7 @@
 package cn.xiaodong.scala.chapter05
 
 /**
- * 匿名函数
+ * 匿名函数（单个参数的案例）
  */
 object S05_lambdaFunction {
 
