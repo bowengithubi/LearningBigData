@@ -11,7 +11,7 @@
 
     <!--sporing设置同一版本-->
     <properties>
-        <sprring-version>5.3.1</sprring-version>
+        <sprring-version>5.3.14</sprring-version>
     </properties>
 
     <build>
