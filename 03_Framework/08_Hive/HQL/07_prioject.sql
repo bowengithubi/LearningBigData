@@ -65,15 +65,15 @@ tblproperties("orc.compress"="SNAPPY");
 select * from user_ori;
 select * from video_ori;
 
---数据量统计
-select count(*) from user_ori;
-select count(*) from video_ori;
-
 --从外部表中插入数据
 insert into table video_orc select * from video_ori;
 insert into table user_orc select * from user_ori;
 
---数据量统计
+--数据量统计(原表)
+select count(*) from user_ori;
+select count(*) from video_ori;
+
+--数据量统计（压缩表）
 select count(*) from user_orc;
 select count(*) from video_orc;
 

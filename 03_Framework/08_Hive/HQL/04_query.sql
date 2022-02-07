@@ -24,8 +24,6 @@ loc_name string
 row format delimited fields terminated by '\t';
 
 load data local inpath '/opt/module/datas/location.txt' into table location;
-
-
 -- 导入数据
 load data local inpath '/opt/module/datas/dept.txt' into table dept;
 load data local inpath '/opt/module/datas/emp.txt' into table emp;
