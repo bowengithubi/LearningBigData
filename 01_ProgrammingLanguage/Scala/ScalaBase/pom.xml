@@ -31,6 +31,8 @@
                            <sources>
                                <!-- 可以在这里添加多个source节点，来添加任意多个源文件夹 -->
                                <source>src/main/scala</source>
+                               <!-- 代码练习目录 -->
+                               <source>src/main/practice</source>
                            </sources>
                        </configuration>
                    </execution>

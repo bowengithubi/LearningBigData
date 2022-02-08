@@ -1,4 +1,4 @@
-package cn.xiaodong.scala.chapter02
+package cn.xiaodong.scala.chapter03
 
 /**
  * Scala操作符测试

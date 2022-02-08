@@ -1,4 +1,4 @@
-package cn.xiaodong.scala.chapter03
+package cn.xiaodong.scala.chapter04
 
 /**
  * Scala for循环

@@ -1,4 +1,4 @@
-package cn.xiaodong.scala.chapter03
+package cn.xiaodong.scala.chapter04
 
 // 静态导入
 import scala.util.control.Breaks._
