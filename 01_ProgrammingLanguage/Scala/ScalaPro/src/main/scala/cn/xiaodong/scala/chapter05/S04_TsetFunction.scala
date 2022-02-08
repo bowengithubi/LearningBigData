@@ -37,6 +37,7 @@ object S04_TsetFunction {
     def f7() {
       println("xiaodong")
     }
+
     f7()
     f7
 
@@ -44,7 +45,7 @@ object S04_TsetFunction {
     def f8 {
       println("xiaodong")
     }
-//    f8() // 会报错
+    //    f8() // 会报错
     f8
 
     //（9）如果不关心名称，只关心逻辑处理，那么函数名（def）可以省略(参见匿名函数部分)

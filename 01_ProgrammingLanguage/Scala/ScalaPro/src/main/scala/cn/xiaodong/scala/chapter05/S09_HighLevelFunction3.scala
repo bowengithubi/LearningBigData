@@ -8,10 +8,10 @@ object S09_HighLevelFunction3 {
   def main(args: Array[String]): Unit = {
 
     // 函数可以做为返回值进行返回  -- 函数的嵌套
-    def f1():()=>Unit ={
-       def f2(): Unit ={
-         println("f2被调用了")
-       }
+    def f1(): () => Unit = {
+      def f2(): Unit = {
+        println("f2被调用了")
+      }
 
       // 将f2作为f1的返回值
       f2 _

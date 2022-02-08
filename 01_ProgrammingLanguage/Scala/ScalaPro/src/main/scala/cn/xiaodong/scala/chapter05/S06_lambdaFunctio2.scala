@@ -8,19 +8,19 @@ object S06_lambdaFunctio2 {
   def main(args: Array[String]): Unit = {
 
     def fun10(fun: (Int, Int) => Int): Unit = {
-     println(fun(1, 6))
+      println(fun(1, 6))
     }
 
     println("-------------------  测试1  --------------------")
     // 全写
     fun10((a: Int, b: Int) => {
-       a + b
+      a + b
     })
 
     println("-------------------  测试2  --------------------")
     // 省略变量类型，省略return
     fun10((a, b) => {
-       a + b
+      a + b
     })
 
     println("-------------------  测试3  --------------------")

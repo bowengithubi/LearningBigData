@@ -6,19 +6,21 @@ package cn.xiaodong.scala.chapter05
 object S01_TestFunction {
   /**
    * 定义一个方法
+   *
    * @param name
    * @return
    */
-  def hello(name:String) :String = {
+  def hello(name: String): String = {
     return "Hello-->" + name
   }
 
   /**
    * 定义一个方法（方法可以重载）
+   *
    * @param name
    * @return
    */
-  def hello(name:Int) :String = {
+  def hello(name: Int): String = {
     return "Hello-->" + name
   }
 
@@ -26,16 +28,18 @@ object S01_TestFunction {
 
     /**
      * 定义一个函数
+     *
      * @param name
      * @return
      */
-    def hello(name:String) :String = {
+    def hello(name: String): String = {
       /**
        * 定义一个函数（函数可以嵌套定义）
+       *
        * @param name
        * @return
        */
-      def hello2(name:String) :String = {
+      def hello2(name: String): String = {
         return "Hello2-->" + name
       }
 

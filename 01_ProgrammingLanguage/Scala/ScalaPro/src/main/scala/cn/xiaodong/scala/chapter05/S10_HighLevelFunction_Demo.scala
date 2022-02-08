@@ -27,7 +27,7 @@ object S10_HighLevelFunction_Demo {
     println("-------------- f2 ---------------")
     // 匿名函数调用
     println(arrayOperation(Array(1, 2, 3, 4, 5), (x: Int) => {
-       x * 2
+      x * 2
     }).mkString(","))
 
     println("-------------- f3 ---------------")
