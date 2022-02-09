@@ -13,32 +13,76 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-   <build>
-       <plugins>
-           <!-- 添加源码目录 -->
-           <plugin>
-               <groupId>org.codehaus.mojo</groupId>
-               <artifactId>build-helper-maven-plugin</artifactId>
-               <version>1.8</version>
-               <executions>
-                   <execution>
-                       <id>add-source</id>
-                       <phase>generate-sources</phase>
-                       <goals>
-                           <goal>add-source</goal>
-                       </goals>
-                       <configuration>
-                           <sources>
-                               <!-- 可以在这里添加多个source节点，来添加任意多个源文件夹 -->
-                               <source>src/main/scala</source>
-                               <!-- 代码练习目录 -->
-                               <source>src/main/practice</source>
-                           </sources>
-                       </configuration>
-                   </execution>
-               </executions>
-           </plugin>
-       </plugins>
-   </build>
+    <!--    <dependencies>-->
+    <!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt;-->
+    <!--        <dependency>-->
+    <!--            <groupId>junit</groupId>-->
+    <!--            <artifactId>junit</artifactId>-->
+    <!--            <version>4.12</version>-->
+    <!--            <scope>test</scope>-->
+    <!--        </dependency>-->
+    <!--    </dependencies>-->
+
+    <build>
+        <plugins>
+            <!-- 添加Scala源码目录 -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <!-- 可以在这里添加多个source节点，来添加任意多个源文件夹 -->
+                                <source>src/main/scala</source>
+                                <!-- 代码练习目录 -->
+                                <source>src/main/practice</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--           &lt;!&ndash; Scala添加Junit支持 &ndash;&gt;-->
+            <!--           &lt;!&ndash; disable surefire &ndash;&gt;-->
+            <!--           <plugin>-->
+            <!--               <groupId>org.apache.maven.plugins</groupId>-->
+            <!--               <artifactId>maven-surefire-plugin</artifactId>-->
+            <!--               <version>2.7</version>-->
+            <!--               <configuration>-->
+            <!--                   <skipTests>true</skipTests>-->
+            <!--               </configuration>-->
+            <!--           </plugin>-->
+
+            <!--           &lt;!&ndash; enable scalatest &ndash;&gt;-->
+            <!--           <plugin>-->
+            <!--               <groupId>org.scalatest</groupId>-->
+            <!--               <artifactId>scalatest-maven-plugin</artifactId>-->
+            <!--               <version>1.0</version>-->
+            <!--               <configuration>-->
+            <!--                   <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>-->
+            <!--                   <junitxml>.</junitxml>-->
+            <!--                   <filereports>WDF TestSuite.txt</filereports>-->
+            <!--               </configuration>-->
+            <!--               <executions>-->
+            <!--                   <execution>-->
+            <!--                       <id>test</id>-->
+            <!--                       <goals>-->
+            <!--                           <goal>test</goal>-->
+            <!--                       </goals>-->
+            <!--                   </execution>-->
+            <!--               </executions>-->
+            <!--           </plugin>-->
+        </plugins>
+
+
+    </build>
+
 
 </project>
